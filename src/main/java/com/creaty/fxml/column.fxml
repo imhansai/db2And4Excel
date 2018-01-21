@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            AnchorPane.topAnchor="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="798.0" prefWidth="798.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.creaty.controller.ColumnController">
+    <children>
+        <TableView fx:id="columnShow" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn fx:id="tableName" minWidth="158.0" prefWidth="158.0" text="表名"/>
+                <TableColumn fx:id="columnName" minWidth="158.0" prefWidth="158.0" text="列名"/>
+                <TableColumn fx:id="dataType" minWidth="158.0" prefWidth="158.0" text="数据类型"/>
+                <TableColumn fx:id="dataLength" minWidth="55.0" prefWidth="55.0" text="数据长度"/>
+                <TableColumn fx:id="nullAble" minWidth="55.0" prefWidth="55.0" text="是否为空"/>
+                <TableColumn fx:id="dataDefault" minWidth="55.0" prefWidth="55.0" text="默认值"/>
+                <TableColumn fx:id="comments" minWidth="158.0" prefWidth="158.0" text="注释"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

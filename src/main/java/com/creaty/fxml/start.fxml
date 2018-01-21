@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="600.0"
+            prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.creaty.controller.StartController">
+    <children>
+        <MenuBar fx:id="menuBar" layoutX="14.0" layoutY="14.0" minHeight="25.0" prefHeight="25.0" prefWidth="582.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="配置">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleNewDB" text="配置数据库"/>
+                        <MenuItem mnemonicParsing="false" text="文件路径"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="选择库">
+                    <items>
+                        <Menu fx:id="OracleMenu" mnemonicParsing="false" text="Oracle"/>
+                        <Menu fx:id="MySQLMenu" mnemonicParsing="false" text="MySQL"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="说明">
+                    <items>
+                        <MenuItem fx:id="About" mnemonicParsing="false" onAction="#handleAbout" text="关于"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

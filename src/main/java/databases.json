@@ -1,0 +1,26 @@
+{
+  "databases": [
+    {
+      "databaseType": "Oracle", // 数据库类型
+      "databaseInfoModelList":
+        {
+          "databaseName": "databaseName", // 数据库名称
+          "databaseUrl": "jdbc:oracle:thin:@//ip:port/orcl", // 数据库连接地址
+          "databaseUserName": "databaseUserName", // 用户名
+          "databasePassword": "databasePassword", // 密码
+          "databaseDriver": "oracle.jdbc.driver.OracleDriver"
+        }
+    },
+    {
+      "databaseType": "MySQL",
+      "databaseInfoModelList":
+        {
+          "databaseName": "databaseName",
+          "databaseUrl": "jdbc:mysql://ip:port/",
+          "databaseUserName": "databaseUserName",
+          "databasePassword": "databasePassword",
+          "databaseDriver": "com.mysql.jdbc.Driver"
+        }
+    }
+  ]
+}
